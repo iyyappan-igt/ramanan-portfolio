@@ -4,7 +4,7 @@ import styles from './FAQ.module.css';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState(0);
+  const [openQuestion, setOpenQuestion] = useState(-1);
 
   const faqs = [
     {

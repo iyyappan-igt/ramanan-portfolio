@@ -132,7 +132,11 @@
   text-align: center;
   margin-top: 25px;
 }
-
+.error {
+  color: #ff6500;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
 .submitButton {
   background: #FF6500;
   color: white;
@@ -151,7 +155,7 @@
 }
 
 .submitButton:hover {
-  background: #f59e0b;
+  background: #cd5404;
   transform: translateY(-4px);
 }
 

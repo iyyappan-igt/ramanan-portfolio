@@ -1,9 +1,9 @@
-import About from "@/components/About/About";
+// import About from "@/components/About/About";
 import Contact from "@/components/Contact/Contact";
 import FAQ from "@/components/Faq/FAQ";
-import Hero from "@/components/Hero/Hero";
-import Process from "@/components/Process/Process";
-import Services from "@/components/Services/Services";
+// import Hero from "@/components/Hero/Hero";
+// import Process from "@/components/Process/Process";
+// import Services from "@/components/Services/Services";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Choose from "@/components/Whychoose/Choose";
 
