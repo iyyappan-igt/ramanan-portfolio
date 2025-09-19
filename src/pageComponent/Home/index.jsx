@@ -4,24 +4,43 @@ import FAQ from "@/components/Faq/FAQ";
 import Hero from "@/components/Hero/Hero";
 import Process from "@/components/Process/Process";
 import Services from "@/components/Services/Services";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import Choose from "@/components/Whychoose/Choose";
 
 const HomePageComponent = () => {
   return (
     <>
-      <Hero />
+      {/* <div id="hero">
+        <Hero />
+      </div>
 
-      <About />
+      <div id="about">
+        <About />
+      </div>
 
-      <Services />
+      <div id="services">
+        <Services />
+      </div>
 
-      <Process />
+      <div id="process">
+        <Process />
+      </div> */}
 
-      <Choose />
+      <div id="why-choose">
+        <Choose />
+      </div>
 
-      <Contact />
+      <div id="testimonials">
+        <Testimonial />
+      </div>
+      
+      <div id="contact">
+        <Contact />
+      </div>
 
-      <FAQ />
+      <div id="faq">
+        <FAQ />
+      </div>
     </>
   );
 };

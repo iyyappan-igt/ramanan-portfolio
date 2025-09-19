@@ -59,9 +59,9 @@ const FAQ = () => {
                 <span className={styles.questionText}>{faq.question}</span>
                 <span className={styles.chevron}>
                   {openQuestion === index ? (
-                    <ChevronUp size={20} />
+                    <ChevronUp size={20} color="#FF6500" />
                   ) : (
-                    <ChevronDown size={20} />
+                    <ChevronDown size={20} color="#FF6500" />
                   )}
                 </span>
               </button>

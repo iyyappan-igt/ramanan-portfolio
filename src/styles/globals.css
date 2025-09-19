@@ -6,6 +6,9 @@ body {
 
 body {
   font-family: "Karla", sans-serif !important;
+  padding-top: 80px; 
+  scroll-behavior: smooth; 
+  overflow-x: hidden; 
 }
 
 * {

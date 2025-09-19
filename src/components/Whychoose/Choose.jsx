@@ -1,49 +1,17 @@
 'use client';
 import styles from './Choose.module.css';
-import { Heart, DollarSign, Users, TrendingUp, Clock, Leaf } from 'lucide-react';
+import { DynamicIcon } from "lucide-react/dynamic";
 
 const Choose = () => {
   const features = [
-    {
-      icon: Heart,
-      title: 'Doctor who understands health + wealth',
-      color: '#ef4444'
-    },
-    {
-      icon: DollarSign,
-      title: 'No hidden charges',
-      color: '#22c55e'
-    },
-    {
-      icon: Users,
-      title: 'Lifetime support',
-      color: '#3b82f6'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Personalized plans, not product-pushing',
-      color: '#8b5cf6'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Combined AUM ₹10,000 Cr',
-      color: '#f59e0b'
-    },
-    {
-      icon: Clock,
-      title: 'SIP Book ₹10+ Lakhs',
-      color: '#6366f1'
-    },
-    {
-      icon: Heart,
-      title: '1L+ patients helped',
-      color: '#ec4899'
-    },
-    {
-      icon: Leaf,
-      title: 'Preventive lifestyle + portfolio growth',
-      color: '#10b981'
-    }
+    { icon: "heart", title: "Doctor who understands health + wealth", color: "#FF6500" },
+    { icon: "dollar-sign", title: "No hidden charges", color: "#FF6500" },
+    { icon: "users", title: "Lifetime support", color: "#FF6500" },
+    { icon: "trending-up", title: "Personalized plans, not product-pushing", color: "#FF6500" },
+    { icon: "trending-up", title: "Combined AUM ₹10,000 Cr", color: "#FF6500" },
+    { icon: "clock", title: "SIP Book ₹10+ Lakhs", color: "#FF6500" },
+    { icon: "heart", title: "1L+ patients helped", color: "#FF6500" },
+    { icon: "leaf", title: "Preventive lifestyle + portfolio growth", color: "#FF6500" },
   ];
 
   return (
@@ -56,22 +24,19 @@ const Choose = () => {
             Experience the difference of working with a healthcare professional turned financial expert
           </p>
         </div>
-        
+
         <div className={styles.featuresGrid}>
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div key={index} className={styles.featureCard}>
-                <div 
-                  className={styles.iconWrapper}
-                  style={{ color: feature.color }}
-                >
-                  <IconComponent size={24} />
-                </div>
-                <h3 className={styles.featureTitle}>{feature.title}</h3>
+          {features.map((feature, index) => (
+            <div key={index} className={styles.featureCard}>
+              <div
+                className={styles.iconWrapper}
+                style={{ backgroundColor: feature.color }}
+              >
+                <DynamicIcon name={feature.icon} size={30} color="#ffffff" />
               </div>
-            );
-          })}
+              <h3 className={styles.featureTitle}>{feature.title}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>
